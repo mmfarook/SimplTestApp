@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SimplTestApp</string>
+    <string name="change">Change</string>
+    <string name="enter_bill_amount">Enter Bill amount</string>
+    <string name="pay_using">Pay Using</string>
+    <string name="pay_using_simpl">Simpl: ₹2000 available</string>
+    <string name="pay_using_upi">UPI</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="charged_to_your_account">₹%s will be charged to your account</string>
+    <string name="payment_request_sent">A payment request will be sent to your VPA</string>
+    <string name="pay_bill">Pay Bill</string>
+    <string name="user_name">Roshan Sam</string>
+    <string name="phoneno">9870763024</string>
+</resources>

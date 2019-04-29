@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_bar_height">186dp</dimen>
+    <dimen name="mainscreen_username_textsize">18sp</dimen>
+    <dimen name="mainscreen_phonenumber_textsize">13sp</dimen>
+    <dimen name="mainscreen_button_height">32dp</dimen>
+    <dimen name="mainscreen_button_textsize">12sp</dimen>
+    <dimen name="close_btn_width">24dp</dimen>
+    <dimen name="close_btn_height">24dp</dimen>
+    <dimen name="mainscreen_amount_container_height">64dp</dimen>
+    <dimen name="rupee_textsize">30sp</dimen>
+    <dimen name="radio_button_text_size">15sp</dimen>
+    <dimen name="radio_button_sub_text_size">13sp</dimen>
+    <dimen name="pay_button_height">52dp</dimen>
+    <dimen name="paybill_button_text_size">16sp</dimen>
+    <dimen name="mainscreen_payusing_text_size">13sp</dimen>
+    <dimen name="mainscreen_edittext_size">24sp</dimen>
+</resources>

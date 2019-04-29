@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainscreen_bg_color"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/simpl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@drawable/app_bar_bg"
+        android:gravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <RelativeLayout
+                android:id="@+id/top_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/user_info_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.example.simpltestapp.view.SimplTextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_name"
+                        android:textColor="@color/mainscreen_user_name_color"
+                        android:textSize="@dimen/mainscreen_username_textsize"
+                        fonts:customFontTypeFace="sourcesanspro_semibold.ttf" />
+
+                    <com.example.simpltestapp.view.SimplTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/user_name"
+                        android:lineSpacingExtra="3sp"
+                        android:text="@string/phoneno"
+                        android:textColor="@color/mainscreen_phone_number_text_color"
+                        android:textSize="@dimen/mainscreen_phonenumber_textsize"
+                        fonts:customFontTypeFace="sourcesanspro_regular.ttf"
+                        tools:text="@string/phoneno" />
+                </RelativeLayout>
+
+                <com.example.simpltestapp.view.SimplButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/mainscreen_button_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/user_info_container"
+                    android:background="@drawable/rectangle_2"
+                    android:letterSpacing="0.08"
+                    android:text="@string/change"
+                    android:textAllCaps="true"
+                    android:textColor="@color/aquamarine"
+                    android:textSize="@dimen/mainscreen_button_textsize"
+                    fonts:customFontTypeFace="sourcesanspro_semibold.ttf" />
+
+                <ImageView
+                    android:id="@+id/close_button"
+                    android:layout_width="@dimen/close_btn_width"
+                    android:layout_height="@dimen/close_btn_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/close" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mainscreen_amount_container_height"
+                android:layout_below="@id/top_panel"
+                android:layout_marginTop="16dp"
+                android:background="@color/transparent_bg">
+
+                <com.example.simpltestapp.view.SimplTextView
+                    android:id="@+id/rs_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/rupee_symbol"
+                    android:textColor="@color/mainscreen_phone_number_text_color"
+                    android:textSize="@dimen/rupee_textsize"
+                    fonts:customFontTypeFace="sourcesanspro_semibold.ttf"
+                    tools:text="@string/rupee_symbol" />
+
+                <com.example.simpltestapp.view.SimplEditText
+                    android:id="@+id/payment_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/rs_symbol"
+                    android:background="@null"
+                    android:hint="@string/enter_bill_amount"
+                    android:inputType="numberDecimal"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/mainscreen_edittext_hint_color"
+                    android:textCursorDrawable="@android:color/white"
+                    android:textSize="@dimen/mainscreen_edittext_size"
+                    fonts:customFontTypeFace="sourcesanspro_bold.ttf" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/payment_option_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simpl_toolbar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-32dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/round_rect_white"
+        android:orientation="vertical">
+
+        <com.example.simpltestapp.view.SimplTextView
+            android:id="@+id/pay_using"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/pay_using"
+            android:textColor="@color/mainscreen_payusing_text_color"
+            android:textSize="@dimen/mainscreen_payusing_text_size"
+            fonts:customFontTypeFace="sourcesanspro_regular.ttf"
+            tools:text="@string/pay_using"
+            android:layout_marginStart="16dp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_color" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp">
+
+            <com.example.simpltestapp.view.SimplRadioButton
+                android:id="@+id/pay_simpl"
+                style="@style/SimplRadioButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:checked="true"
+                android:paddingLeft="8dp"
+                android:text="@string/pay_using_simpl"
+                android:textColor="@color/radio_button_text_color"
+                android:textSize="@dimen/radio_button_text_size"
+                fonts:customFontTypeFace="sourcesanspro_semibold.ttf" />
+
+            <com.example.simpltestapp.view.SimplTextView
+                android:id="@+id/simpl_radio_subtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:text="@string/charged_to_your_account"
+                android:textColor="@color/radio_button_sub_text_color"
+                android:textSize="@dimen/radio_button_sub_text_size"
+                android:visibility="gone"
+                fonts:customFontTypeFace="sourcesanspro_regular.ttf" />
+
+            <com.example.simpltestapp.view.SimplRadioButton
+                android:id="@+id/pay_upi"
+                style="@style/SimplRadioButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="8dp"
+                android:text="@string/pay_using_upi"
+                android:textColor="@color/radio_button_text_color"
+                android:textSize="@dimen/radio_button_text_size"
+                fonts:customFontTypeFace="sourcesanspro_semibold.ttf" />
+
+            <com.example.simpltestapp.view.SimplTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/payment_request_sent"
+                android:textColor="@color/radio_button_sub_text_color"
+                android:textSize="@dimen/radio_button_sub_text_size"
+                fonts:customFontTypeFace="sourcesanspro_regular.ttf" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/pay_bill_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pay_button_height"
+        android:layout_below="@id/payment_option_container"
+        android:layout_margin="16dp"
+        android:background="@drawable/round_rect_aquamarine"
+        android:enabled="false">
+
+        <com.example.simpltestapp.view.SimplTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="8dp"
+            android:text="@string/pay_bill"
+            android:textAllCaps="true"
+            android:textColor="@color/paybill_button_text_color"
+            android:textSize="@dimen/paybill_button_text_size"
+            fonts:customFontTypeFace="sourcesanspro_semibold.ttf" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="mainscreen_user_name_color">@android:color/white</color>
+    <color name="mainscreen_phone_number_text_color">@android:color/white</color>
+    <color name="aquamarine">#00d1c1</color>
+    <color name="transparent_bg">#0c000000</color>
+    <color name="radio_button_text_color">#344647</color>
+    <color name="radio_button_sub_text_color">#77898a</color>
+    <color name="paybill_button_text_color">@android:color/white</color>
+    <color name="mainscreen_bg_color">#f4f4f4</color>
+    <color name="mainscreen_payusing_text_color">#77898a</color>
+    <color name="divider_color">#e6ebe9</color>
+    <color name="mainscreen_edittext_hint_color">#99ffffff</color>
+</resources>
